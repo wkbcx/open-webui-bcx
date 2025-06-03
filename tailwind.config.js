@@ -11,17 +11,31 @@ export default {
 				gray: {
 					50: 'var(--color-gray-50, #f9f9f9)',
 					100: 'var(--color-gray-100, #ececec)',
-					200: 'var(--color-gray-200, #e3e3e3)',
+					200: 'var(--color-gray-200, #ececec)',
 					300: 'var(--color-gray-300, #cdcdcd)',
-					400: 'var(--color-gray-400, #b4b4b4)',
+					400: 'var(--color-gray-400, #cdcdcd)',
 					500: 'var(--color-gray-500, #9b9b9b)',
-					600: 'var(--color-gray-600, #676767)',
+					600: 'var(--color-gray-600, #9b9b9b)',
 					700: 'var(--color-gray-700, #4e4e4e)',
-					800: 'var(--color-gray-800, #333)',
-					850: 'var(--color-gray-850, #262626)',
-					900: 'var(--color-gray-900, #171717)',
-					950: 'var(--color-gray-950, #0d0d0d)'
+					800: 'var(--color-gray-800, #2f5462)',
+					850: 'var(--color-gray-850, #6ba3b8)',
+					900: 'var(--color-gray-900, #00263e)',
+					950: 'var(--color-gray-950, #00263e)'
 				}
+				// gray: {
+				// 	50: 'var(--color-gray-50, #f9f9f9)',
+				// 	100: 'var(--color-gray-100, #ececec)',
+				// 	200: 'var(--color-gray-200, #e3e3e3)',
+				// 	300: 'var(--color-gray-300, #cdcdcd)',
+				// 	400: 'var(--color-gray-400, #b4b4b4)',
+				// 	500: 'var(--color-gray-500, #9b9b9b)',
+				// 	600: 'var(--color-gray-600, #676767)',
+				// 	700: 'var(--color-gray-700, #4e4e4e)',
+				// 	800: 'var(--color-gray-800, #333)',
+				// 	850: 'var(--color-gray-850, #262626)',
+				// 	900: 'var(--color-gray-900, #171717)',
+				// 	950: 'var(--color-gray-950, #0d0d0d)'
+				// }
 			},
 			typography: {
 				DEFAULT: {
