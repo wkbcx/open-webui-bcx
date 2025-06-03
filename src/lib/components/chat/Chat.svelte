@@ -2003,7 +2003,7 @@
 	id="chat-container"
 >
 	{#if !loading}
-		<div in:fade={{ duration: 50 }} class="w-full h-full flex flex-col">
+		<div in:fade={{ duration: 50 }} class="flex flex-col w-full h-full">
 			{#if $settings?.backgroundImageUrl ?? null}
 				<div
 					class="absolute {$showSidebar
@@ -2013,12 +2013,12 @@
 				/>
 
 				<div
-					class="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white to-white/85 dark:from-gray-900 dark:to-gray-900/90 z-0"
+					class="absolute top-0 left-0 z-0 w-full h-full bg-linear-to-t from-white to-white/50 dark:from-gray-900 dark:to-gray-900/70"
 				/>
 			{/if}
 
 			<PaneGroup direction="horizontal" class="w-full h-full">
-				<Pane defaultSize={50} class="h-full flex relative max-w-full flex-col">
+				<Pane defaultSize={50} class="relative flex flex-col h-full max-w-full">
 					<Navbar
 						bind:this={navbarElement}
 						chat={{
@@ -2051,7 +2051,7 @@
 										messagesContainerElement.clientHeight + 5;
 								}}
 							>
-								<div class=" h-full w-full flex flex-col">
+								<div class="flex flex-col w-full h-full ">
 									<Messages
 										chatId={$chatId}
 										bind:history
@@ -2124,13 +2124,13 @@
 								/>
 
 								<div
-									class="absolute bottom-1 text-xs text-gray-500 text-center line-clamp-1 right-0 left-0"
+									class="absolute left-0 right-0 text-xs text-center text-gray-500 bottom-1 line-clamp-1"
 								>
 									<!-- {$i18n.t('LLMs can make mistakes. Verify important information.')} -->
 								</div>
 							</div>
 						{:else}
-							<div class="overflow-auto w-full h-full flex items-center">
+							<div class="flex items-center w-full h-full overflow-auto">
 								<Placeholder
 									{history}
 									{selectedModels}
@@ -2196,7 +2196,7 @@
 			</PaneGroup>
 		</div>
 	{:else if loading}
-		<div class=" flex items-center justify-center h-full w-full">
+		<div class="flex items-center justify-center w-full h-full ">
 			<div class="m-auto">
 				<Spinner />
 			</div>
