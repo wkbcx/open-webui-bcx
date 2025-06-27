@@ -2,6 +2,7 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
 
+start /B "Playwright Server" playwright run-server --port 8090
 :: Get the directory of the current script
 SET "SCRIPT_DIR=%~dp0"
 cd /d "%SCRIPT_DIR%" || exit /b
